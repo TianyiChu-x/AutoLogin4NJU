@@ -91,15 +91,16 @@ pip install paddleocr
 
 Set up and use `chromedriver` with Selenium for web automation in Python. This setup is crucial for running scripts that interact with web browsers to perform tasks such as logging into websites, scraping data, and more.
 
-1. Visit the [Chromium Chromedriver](https://chromedriver.chromium.org/downloads) page.
-2. Download the version of `chromedriver` that matches the version of your Chrome browser.
-3. Unzip the downloaded file to a directory of your choice.
-4. For Linux/Mac users, Ensure the path to the `chromedriver` executable is set in your system's PATH environment variable:
+1. Open your Chrome browser and type `chrome://settings/help` into the address bar and press Enter.
+2. Visit the [Chromium Chromedriver](https://googlechromelabs.github.io/chrome-for-testing/) page.
+3. Download the version of `chromedriver` that corresponds to the Chrome version you noted earlier. Ensure you select the correct version for your operating system (Windows, macOS, Linux).
+4. Unzip the downloaded file to a directory of your choice.
+5. For Linux/Mac users, Ensure the path to the `chromedriver` executable is set in your system's PATH environment variable:
    ```bash
    sudo mv ~/Documents/chromedriver /usr/local/bin/
    sudo chmod +x /usr/local/bin/chromedriver
    ```
-5. Verify installation:
+6. Verify installation:
    ```bash
    chromedriver
    ```
