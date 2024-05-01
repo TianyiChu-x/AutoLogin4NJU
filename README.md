@@ -85,9 +85,21 @@ After installing PaddlePaddle, install PaddleOCR:
 pip install paddleocr
 ```
 
-## Configuration
+## Configuration (config.ini)
 
-To use this script, you must first set up the necessary configuration in a file named `config.ini`. This file should include your NJU campus network credentials, OCR settings, and other preferences.
+Configure the script using the `config.ini` file. Below are detailed explanations for each setting:
+
+### [credentials]
+- `username`: Your NJU campus network username.
+- `password`: Your NJU campus network password.
+
+### [OCR]
+- `engine`: The OCR engine used for captcha recognition. Options are `paddleocr` or `tesseract`.
+
+### [settings]
+- `sleep_duration`: The time in seconds to wait between attempts to log in or recover from errors.
+- `use_headless`: Set to `true` to run Chrome in headless mode (without a GUI), or `false` to run with a GUI.
+- `use_gpu`: Set to `true` to enable GPU acceleration for PaddleOCR (if available), or `false` to use CPU only.
 
 ### Example `config.ini` Format
 
