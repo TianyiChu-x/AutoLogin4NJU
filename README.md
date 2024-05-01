@@ -1,3 +1,5 @@
+<h3 align="center"><img width="700" style="border-radius:5px;" alt="demo" src="AutoLogin4NJU.gif"></h3>
+
 # NJU Campus Network Auto-Login
 
 This Python script automates the process of logging into the Nanjing University campus network. It handles the login page, captures and recognizes captcha using OCR, and submits the user credentials.
