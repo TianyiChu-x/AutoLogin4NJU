@@ -46,7 +46,7 @@ def recognize_captcha(image_path, logger, config):
         ocr = PaddleOCR(use_gpu=config['use_gpu'], use_angle_cls=False, lang='en')
         result = ocr.ocr(image_path, cls=True)
         
-        if result:
+        if result and result[0]:
             text_lines = [line[1][0] for line in result[0] if line[1]]
             recognized_text = ''.join(text_lines)
         else:
